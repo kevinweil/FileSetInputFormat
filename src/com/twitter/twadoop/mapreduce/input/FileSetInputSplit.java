@@ -25,6 +25,8 @@ public class FileSetInputSplit extends InputSplit implements Writable {
   private Path path_;
   private Configuration conf_;
 
+  public FileSetInputSplit() {}
+  
   public FileSetInputSplit(Path path, Configuration conf) {
     path_ = path;
     conf_ = conf;
