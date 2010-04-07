@@ -28,7 +28,7 @@ public class FileSetInputSplit extends InputSplit implements Writable {
   public FileSetInputSplit() {
     conf_ = new Configuration();
   }
-  
+
   public FileSetInputSplit(Path path, Configuration conf) {
     path_ = path;
     conf_ = conf;
@@ -37,7 +37,7 @@ public class FileSetInputSplit extends InputSplit implements Writable {
   public Path getPath() {
     return path_;
   }
-
+  
   @Override
   public long getLength() throws IOException, InterruptedException {
     return 1;
